@@ -26,11 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
         //done: connect recylcer view to our  food Adapter
         final FoodAdapter foodAdapter = new FoodAdapter();
-        recyclerView.setAdapter(foodAdapter);
+
 
        foodAdapter.addFood();
        foodAdapter.addFood();
        foodAdapter.addFood();
+        recyclerView.setAdapter(foodAdapter);
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

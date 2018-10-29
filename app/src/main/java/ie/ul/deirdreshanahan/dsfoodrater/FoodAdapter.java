@@ -9,6 +9,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder> {
     private List<Food> mFoods = new ArrayList<>();
@@ -24,8 +25,8 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
     public void addFood() {
         mFoods.add(0, new Food());
         notifyItemInserted(0);
-        notifyItemRangeChanged(0, mFoods.size());
-        mRecyclerView.getLayoutManager().scrollToPosition(0);
+        //notifyItemRangeChanged(0, mFoods.size());
+        //mRecyclerView.getLayoutManager().scrollToPosition(1);
         }
         private void deleteFood(int position) {
         mFoods.remove(position);
