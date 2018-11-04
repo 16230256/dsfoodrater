@@ -26,12 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
         //done: connect recylcer view to our  food Adapter
         final FoodAdapter foodAdapter = new FoodAdapter();
-
-
-       foodAdapter.addFood();
-       foodAdapter.addFood();
-       foodAdapter.addFood();
         recyclerView.setAdapter(foodAdapter);
+
+
+        foodAdapter.addFood();
+        foodAdapter.addFood();
+        foodAdapter.addFood();
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -42,5 +42,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }
+
+

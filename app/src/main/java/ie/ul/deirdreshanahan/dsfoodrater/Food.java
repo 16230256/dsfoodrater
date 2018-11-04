@@ -37,19 +37,23 @@ public class Food {
     return (String)foods[random.nextInt(foods.length)];
   }
 
-  public String getName() {
+  public String getName()
+  {
     return mName;
   }
 
-  public float getRating() {
+  public float getRating()
+  {
     return mRating;
   }
 
-  public void setRating(float rating) {
+  public void setRating(float rating)
+  {
     mRating = rating;
   }
 
-  public int getImageResourceId() {
+  public int getImageResourceId()
+  {
     return mImageResourceId;
   }
 }
